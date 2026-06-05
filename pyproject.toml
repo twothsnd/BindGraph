@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bindgraph"
+version = "0.1.0"
+description = "Sparse pair-embedding graph neural network for protein binder screening"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "torch>=2.0",
+  "PyYAML>=5.4",
+]
+
+[project.optional-dependencies]
+progress = ["tqdm>=4.64"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

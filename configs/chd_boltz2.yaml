@@ -1,0 +1,17 @@
+# Example config for CHD BindGraph graph preparation.
+# Edit paths before running.
+
+input_csv: data/chd_binder_45samples.csv
+embedding_dir: data/boltz2_embeddings
+output_pkl: data/graphs/chd_boltz2_topk8.pkl
+
+name_column: name
+activity_column: sensing folds
+
+embedding:
+  format: boltz2
+  filename_template: embeddings_{name}.npz
+  lowercase_name: false
+
+graph:
+  top_k: 8

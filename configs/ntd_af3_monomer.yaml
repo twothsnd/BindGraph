@@ -1,0 +1,17 @@
+# Example config for NTD BindGraph graph preparation.
+# Edit paths before running.
+
+input_csv: data/ntd_36samples.csv
+embedding_dir: data/af3_monomer_embeddings
+output_pkl: data/graphs/ntd_af3_monomer_topk8.pkl
+
+name_column: name
+activity_column: sensing folds
+
+embedding:
+  format: af3_monomer
+  filename_template: "{name}_monomer_seed-1_embeddings.npz"
+  lowercase_name: false
+
+graph:
+  top_k: 8
