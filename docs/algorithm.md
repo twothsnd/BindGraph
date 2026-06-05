@@ -101,4 +101,4 @@ Candidates are ranked by descending `score`.
 | dataset | node feature | edge feature | graph/model/training |
 |---|---|---|---|
 | CHD | Boltz2 single | Boltz2 pair | same |
-| NTD | AF3 monomer raw single | AF3 monomer raw pair | same |
+| NTD | AF3 monomer single | AF3 monomer pair | same |

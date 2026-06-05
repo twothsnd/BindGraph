@@ -9,7 +9,7 @@ different backbone or complex-structure models. In the current examples:
 
 - CHD: Boltz2 single embeddings as node features and Boltz2 pair embeddings as
   edge features.
-- NTD: AF3 monomer raw single embeddings as node features and AF3 monomer raw
+- NTD: AF3 monomer single embeddings as node features and AF3 monomer
   pair embeddings as edge features.
 
 The graph construction, GNN architecture, cross-validation training loop, and
@@ -119,7 +119,7 @@ python scripts/predict_ensemble.py \
   --device cuda:0
 ```
 
-For AF3 monomer raw embeddings:
+For AF3 monomer embeddings:
 
 ```bash
 python scripts/predict_ensemble.py \
