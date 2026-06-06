@@ -1,5 +1,7 @@
 # BindGraph
 
+![BindGraph overview](assets/bindgraph-social-preview.png)
+
 BindGraph is a sparse pair-embedding graph neural network for protein binder
 screening. It is designed as the model-training and candidate-ranking module in
 an AI-guided binder engineering workflow.
